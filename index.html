@@ -54,20 +54,6 @@
       <button type="submit" class="btn-outline-danger">Quero ajudar</button>
     </form>
   </section>
-
-  <main>
-    <h2>Últimos <span>doadores</span></h2>
-    <section class="donors">
-      <?php while ($dado = $con -> fetch_array()){ ?>
-        <div class="donor">
-          <div class="blood"><?php echo $dado["nome"] ?></div>
-          <p><?php echo $dado["tipos"] ?></p>
-        </div>
-      <?php }?>
-    </section>
-  </main>
-
   <footer>Com ❤ Seis Biônicos</footer>
-  <script src="js/script.js"></script>
 </body>
 </html>
