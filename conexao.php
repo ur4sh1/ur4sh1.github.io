@@ -2,7 +2,7 @@
   $host = "localhost";
   $usuario = "root";
   $senha = "";
-  $bd = "doe_sangue";
+  $bd = "doadores";
 
   $mysqli = mysqli_connect($host, $usuario, $senha, $bd);
 

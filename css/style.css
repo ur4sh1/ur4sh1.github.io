@@ -149,3 +149,32 @@ section.form.hide {
       text-indent: 0.01px; 
       text-overflow: "";    
 }
+
+.vid{
+  text-align: center;
+  background-position: 205px center;
+}
+
+.a{
+  text-decoration: none;
+  text-align: center;
+  font-family: verdana;
+  font-size: 15px;
+  border-radius: 4px;
+  width: 200px;
+  height: 10px;
+  color: rgb(0, 0, 0);
+}
+
+table{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: verdana;
+}
+
+
+

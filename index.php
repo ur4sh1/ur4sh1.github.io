@@ -1,6 +1,5 @@
 <!-- <?php 
-    include("conexao.php");
-    include("consulta.php");
+session_start();
 ?>  -->
 <!DOCTYPE html>
 
@@ -19,7 +18,8 @@
   <script type="text/javascript" src="js/jquery.mask.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-    $("#cpf").mask("000.000.000-00")
+    $("#senha").mask("000000000000000");
+    $('#user').mask('SSSSSSSSSSSSSSSSSSSS')
   })
   </script>
 </head>
@@ -32,44 +32,38 @@
     <p>Até 3 vidas com 1 doação</p>
     <p>Mais de 38 mil doações são necessárias todos os dias</p>
     <p>Apenas 1,9% da população brasileira doa sangue</p>
-
-    <button class="btn btn-outline-danger"><h3>Quero ajudar</h3></button>
+    <button class="btn btn-outline-danger"><h3>Para adicionar doadores faça login</h3></button>
   </header>
 
+  <?php
+    if(isset($_SESSION['nao_autenticado'])):
+  ?>
+  <div class="notification is-danger">
+  <p>ERRO: Usuário ou senha inválidos.</p>
+  </div>
+  <?php
+  endif;
+  unset($_SESSION['nao_autenticado']);
+  ?>
+
   <section class="form hide">
-    <h2>Entre na lista de doadores</h2>
-    <form action="inserir.php?p=index.php" method="POST">
-      <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
-      <input type="text" name="email" id="email" placeholder="Email" required>
-      <input type="text" name="cpf" id="cpf" placeholder="Cpf" required>
-      <div class="divSelect">
-        <select name="tipos" id="tipos">
-          <option value="" selected disabled hidden>Tipo Sanguineo</option>
-          <option value="A+">A+</option>
-          <option value="B+">B+</option>
-          <option value="O+">O+</option>
-          <option value="AB+">AB+</option>
-          <option value="A-">A-</option>
-          <option value="B-">B-</option>
-          <option value="O-">O-</option>
-          <option value="AB-">AB-</option>
-        </select>
-      </div>
-      <button type="submit" class="btn-outline-danger">Quero ajudar</button>
+    <h2>SISTEMA DOE SANGUE</h2>
+    <form action="login.php" method="POST">
+      <input type="text" name="user" id="user" placeholder="USUÁRIO" required>
+      <input type="password" name="senha" id="senha" placeholder="SENHA" required>
+      <button type="submit" class="btn-outline-danger">Entrar</button>
     </form>
   </section>
 
-  <main>
-    <h2>Últimos <span>doadores</span></h2>
-    <section class="donors">
-      <?php while ($dado = $con -> fetch_array()){ ?>
-        <div class="donor">
-          <div class="blood"><?php echo $dado["nome"] ?></div>
-          <p><?php echo $dado["tipos"] ?></p>
-        </div>
-      <?php }?>
-    </section>
-  </main>
+<div class="vid">
+<video autoplay controls loop src="video/Campanha_Doe_Sangue.mp4" type="video/mp4" width="600">
+<object>
+    <embed src="Campanha_Doe_Sangue.mp4" type="application/x-shockwave-flash" 
+    allowfullscreen="false" allowscriptaccess="always">  		
+  </object>
+</video>
+<h2>Campanha doe sangue 2017</h2>
+</div>
 
   <footer>Com ❤ Seis Biônicos</footer>
   <script src="js/script.js"></script>

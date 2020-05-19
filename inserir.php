@@ -10,6 +10,6 @@
   
   mysqli_query($mysqli, $cadastro);
 
-  echo "<script>location.href='index.php';</script>";
+  echo "<script>location.href='form.php';</script>";
 
 ?>
