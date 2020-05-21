@@ -130,7 +130,7 @@ section.form.hide {
   }
 
   .divSelect select{
-    background-color: #ff4f4f;
+    background-color: hsl(0, 100%, 65%);
     color: #ffffffaa;
     width: 100%;
     margin-bottom: 4px;
@@ -166,7 +166,21 @@ section.form.hide {
   color: rgb(0, 0, 0);
 }
 
-table{
+table#lista{
+  width: 40%;
+  margin: auto auto;
+  text-align: left;
+}
+
+tr#lista{
+  border: solid 1px;
+}
+
+td#lista{
+  border: solid 1px;
+}
+
+table#menu{
   position: fixed;
   top: 0;
   left: 0;
@@ -174,6 +188,12 @@ table{
   text-decoration: none;
   text-align: center;
   font-family: verdana;
+}
+
+th#titulo{
+  text-align: center;
+  border: solid 1px;
+  background-color: hsl(0, 100%, 65%);
 }
 
 

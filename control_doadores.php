@@ -36,7 +36,7 @@
   <section>
   <div class="table-responsive">
   <table id="lista">
-    <tr>
+    <tr id="lista">
       <th id="titulo">ID</th>
       <th id="titulo">NOME</th>
       <th id="titulo">TIPO</th>
@@ -45,11 +45,15 @@
     </tr>
         <?php while ($dado = $con -> fetch_array()){ ?>
         <tr>
-        <td><?php echo $dado["id"] ?></td>
-        <td><?php echo $dado["nome"] ?></td>
-        <td><?php echo $dado["tipos"] ?></td>
-        <td><?php echo $dado["cpf"] ?></td>
-        <td><?php echo $dado["email"] ?></td>
+        <td id="lista"><?php echo $dado["id"] ?></td>
+        <td id="lista"><?php echo $dado["nome"] ?></td>
+        <td id="lista"><?php echo $dado["tipos"] ?></td>
+        <td id="lista"><?php echo $dado["cpf"] ?></td>
+        <td id="lista"><?php echo $dado["email"] ?></td>
+          <td>
+            <a href=""><input type="button" class="btn-outline-danger" value="EDITAR"></a>
+            <a href='delete_doador.php?id=<?php echo $dado["id"]?>'><input type="button" class="btn-outline-danger" value="EXCLUIR"></a>
+          </td>
         </tr>
         <?php }?>
       </table>
