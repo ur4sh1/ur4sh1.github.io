@@ -72,7 +72,7 @@
     </section>
   </main>
 
-    <table>
+    <table id="menu">
       <tr>
         <th>
         <?php echo $_SESSION['user'];?>:
@@ -81,7 +81,7 @@
           <a href="logout.php">LOGOUT</a>
         </th>
         <th>
-          <a href="control.php">CONTROL</a>
+          <a href="control_doadores.php">CONTROL</a>
         </th>
       </tr>
     </table>
