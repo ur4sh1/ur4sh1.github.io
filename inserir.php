@@ -6,7 +6,7 @@
   $tipo = filter_input(INPUT_POST,'tipo');
   
   $cadastro = "INSERT INTO doadores (nome, email, cpf, tipo) 
-               VALUES ('$nome','$email', '$cpf', '$tipos')";
+               VALUES ('$nome','$email', '$cpf', '$tipo')";
   
   mysqli_query($mysqli, $cadastro);
 
