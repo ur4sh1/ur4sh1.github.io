@@ -167,9 +167,11 @@ section.form.hide {
 }
 
 table#lista{
-  width: 40%;
+  max-width: 70%;
+  min-width: 50%;
   margin: auto auto;
   text-align: left;
+  font-family: verdana;
 }
 
 tr#lista{
@@ -191,10 +193,34 @@ table#menu{
 }
 
 th#titulo{
+  font-family: verdana;
   text-align: center;
   border: solid 1px;
   background-color: hsl(0, 100%, 65%);
 }
 
+fieldset{
+  max-width: 70%;
+  min-width: 50%;
+  margin: auto auto;
+}
 
+table#edit{
+  width: 500px;
+  margin: auto auto;
+  text-align: left;
+  font-family: verdana;
+  background-color: hsl(0, 85%, 82%);
+  border-radius: 5px;
+  
+}
 
+form#edit{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+  align-items: center;
+  background-color: #ff4f4f;
+  padding: 16px 64px;
+  border-radius: 6px;
+}
