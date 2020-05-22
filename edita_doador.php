@@ -39,13 +39,13 @@
   <section class="form">
   <h2>Altere as informações desejadas</h2>
     <form action="alterar.php" method="POST">
-      <input type="hiden" name="id" id="id"value="<?php echo $dado["id"] ?>" required>
+      <input hidden type="text" name="id" id="id"value="<?php echo $dado["id"] ?>" required>
       <input type="text" name="nome" id="nome"value="<?php echo $dado["nome"] ?>" required>
       <input type="text" name="email" id="email" value="<?php echo $dado["email"] ?>" required>
       <input type="text" name="cpf" id="cpf" value="<?php echo $dado["cpf"] ?>" required>
       <div class="divSelect">
-        <select name="tipo" id="tipo">
-          <option value="<?= $dado["tipo"] ?>" selected disabled hidden><?php echo $dado["tipo"] ?></option>
+        <select name="tipo" id="tipo" required>
+          <option value="<?= $dado["tipo"] ?>" hidden><?php echo $dado["tipo"] ?></option>
           <option value="A+">A+</option>
           <option value="B+">B+</option>
           <option value="O+">O+</option>
@@ -57,7 +57,7 @@
         </select>
       </div>
       <div>
-      <button type="submit" class="btn-outline-danger">SALVAR</button>
+      <button type="submit" class="btn-outline-danger">SALVAR</button><a href="control_doadores.php"><button class="btn-outline-danger">CANCELAR</button></a>
       </div>
     </form>
   </section>
@@ -71,10 +71,10 @@
         <?php echo $_SESSION['user'];?>:
         </th>
         <th>
-          <a href="logout.php">LOGOUT</a>
+          <a href="logout.php"><button id="btnM">LOGOUT</button></a>
         </th>
         <th>
-          <a href="control_doadores.php">CONTROL</a>
+          <a href="control_doadores.php"><button id="btnM">LISTA COMPLETA</button></a>
         </th>
       </tr>
     </table>

@@ -30,10 +30,11 @@
   <!--Conteúdo da página-->
   <header>
     <img class="logo" src="./assets/logo.png" alt="DOE">
-    <h2>A sua doação importa</h2>
-    <p>Até 3 vidas com 1 doação</p>
-    <p>Mais de 38 mil doações são necessárias todos os dias</p>
-    <p>Apenas 1,9% da população brasileira doa sangue</p>
+    <h2>O que é a doação de sangue?</h2>
+    <div class="doarsangue">
+    <p>A doação de sangue é um gesto solidário!</p>
+    <p>Doar uma pequena quantidade do próprio sangue pode salvar vidas!</p>
+    </div>
     <button class="btn btn-outline-danger"><h3>FORMULÁRIO</h3></button>
   </header>
     
@@ -44,7 +45,7 @@
       <input type="text" name="email" id="email" placeholder="Email" required>
       <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
       <div class="divSelect">
-        <select name="tipo" id="tipo">
+        <select name="tipo" id="tipo" required>
           <option value="" selected disabled hidden>Tipo Sanguineo</option>
           <option value="A+">A+</option>
           <option value="B+">B+</option>
@@ -78,10 +79,10 @@
         <?php echo $_SESSION['user'];?>:
         </th>
         <th>
-          <a href="logout.php">LOGOUT</a>
+          <a href="logout.php"><button id="btnM">LOGOUT</button></a>
         </th>
         <th>
-          <a href="control_doadores.php">CONTROL</a>
+          <a href="control_doadores.php"><button id="btnM">LISTA COMPLETA</button></a>
         </th>
       </tr>
     </table>

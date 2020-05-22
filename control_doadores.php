@@ -32,7 +32,11 @@
     <img class="logo" src="./assets/logo.png" alt="DOE">
     <h3>LISTA DE DOADORES</h3>
   </header>
-    
+
+<!--teste de exclusão-->
+
+<!--teste de exclusão-->
+
   <section>
   <div class="table-responsive">
   <table id="lista">
@@ -49,8 +53,8 @@
         <td id="lista"><?php echo $dado["cpf"] ?></td>
         <td id="lista"><?php echo $dado["email"] ?></td>
           <td>
-            <a href='edita_doador.php?id=<?=$dado["id"]?>'><input type="button" class="" value="EDITAR"></a>
-            <a href='deletar.php?id=<?=$dado["id"]?>'><input type="button" class="" value="EXCLUIR"></a>
+            <a href='edita_doador.php?id=<?=$dado["id"]?>'><input type="button" class="btn btn-outline-danger" value="EDITAR"></a>
+            <a href='deletar.php?id=<?=$dado["id"]?>'><input type="button" class="btn btn-outline-danger" value="EXCLUIR"></a>
           </td>
         </tr>
         <?php }?>
@@ -66,10 +70,10 @@
         <?php echo $_SESSION['user'];?>:
         </th>
         <th>
-          <a href="logout.php">LOGOUT</a>
+          <a href="logout.php"><button id="btnM">LOGOUT</button></a>
         </th>
         <th>
-          <a href="form.php">FORMULÁRIO</a>
+          <a href="form.php"><button id="btnM">FORMULÁRIO</button></a>
         </th>
       </tr>
     </table>
