@@ -10,7 +10,7 @@ $update = "UPDATE doadores SET nome ='{$nome}',
  email='{$email}',
  cpf='{$cpf}', 
  tipo ='{$tipo}'
- WHERE id = '{$id}'";
+ WHERE id = {$id}";
   
   mysqli_query($mysqli, $update);
   header("Location: control_doadores.php");

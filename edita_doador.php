@@ -38,12 +38,13 @@
 
   <section class="form">
   <h2>Altere as informações desejadas</h2>
-    <form action="alterar.php?e=edita_doador.php" method="POST">
+    <form action="alterar.php" method="POST">
+      <input type="hiden" name="id" id="id"value="<?php echo $dado["id"] ?>" required>
       <input type="text" name="nome" id="nome"value="<?php echo $dado["nome"] ?>" required>
       <input type="text" name="email" id="email" value="<?php echo $dado["email"] ?>" required>
       <input type="text" name="cpf" id="cpf" value="<?php echo $dado["cpf"] ?>" required>
       <div class="divSelect">
-        <select name="tipo" id="tipo" select value="<?php echo $dado["tipo"] ?>">
+        <select name="tipo" id="tipo">
           <option value="<?= $dado["tipo"] ?>" selected disabled hidden><?php echo $dado["tipo"] ?></option>
           <option value="A+">A+</option>
           <option value="B+">B+</option>
