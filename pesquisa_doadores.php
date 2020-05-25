@@ -20,20 +20,19 @@
 </head>
 
 <body>
-
-  <header>
+<header>
     <img class="logo" src="./assets/logo.png" alt="DOE">
     <h3>PESQUISA DE DOADORES</h3>
-  </header>
+</header>
+    <div class="container">
+        <!-- MENU PESQUISA -->
+        <form method="POST" action="">
+            <label for="pesquisa">Pesquise por tipo sanguíneo</label>
+            <input class="form-control" type="text" name="pesquisa" id="pesquisa" placeholder="Tipo"/>
+        </form>
 
-  <!-- MENU PESQUISA -->
-  <form method="POST" action="">
-    <label>Pesquise por tipo sanguíneo</label>
-    <input type="text" name="pesquisa" id="pesquisa" placeholder="Tipo"/>
-  </form>
-
-  <div class="resultado"></div>
-
+        <div class="resultado"></div>
+    </div>
 <!-- MENU ADMIN -->
     <table id="menu">
       <tr>
@@ -53,7 +52,6 @@
     </table>
 <!-- MENU ADMIN -->
   <footer>Com ❤ Seis Biônicos</footer>
-  
   <script type="text/javascript" src="js/pesquisa.js"></script>
 </body>
 </html>
