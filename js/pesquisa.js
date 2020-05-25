@@ -7,9 +7,9 @@ $(function(){
 			var dados = {
 				palavra : pesquisa
 			}
-			$.post('proc_pesq_user.php', dados, function(retorna){
+			$.post('pesquisar.php', dados, function(retorna){
 				//Mostra dentro da ul os resultado obtidos 
-				$(".resultado").php(retorna);
+				$(".resultado").html(retorna);
 			});
 		}
 	});

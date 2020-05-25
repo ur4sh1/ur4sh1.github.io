@@ -1,7 +1,6 @@
 <!-- <?php 
     include('verifica_login.php');
     include('conexao.php');
-    include('pesquisa.php');
 ?>  -->
 <!DOCTYPE html>
 
@@ -16,7 +15,7 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.mask.min.js"></script>
 </head>
 
@@ -28,15 +27,12 @@
   </header>
 
   <!-- MENU PESQUISA -->
-  <form method="POST" id="formPesq" action="">
+  <form method="POST" action="">
     <label>Pesquise por tipo sanguíneo</label>
     <input type="text" name="pesquisa" id="pesquisa" placeholder="Tipo"/>
   </form>
 
-  <ul class="resultado">
-
-
-  </ul>
+  <div class="resultado"></div>
 
 <!-- MENU ADMIN -->
     <table id="menu">
@@ -57,7 +53,7 @@
     </table>
 <!-- MENU ADMIN -->
   <footer>Com ❤ Seis Biônicos</footer>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  
   <script type="text/javascript" src="js/pesquisa.js"></script>
 </body>
 </html>
