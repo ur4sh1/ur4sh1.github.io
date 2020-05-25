@@ -18,24 +18,15 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.mask.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-    $("#cpf").mask("000.000.000-00");
-    $('#nome').mask('SSSSSSSSSSSSSSSSSSSS')
-  })
   </script>
 </head>
 
 <body>
-<!--LISTA DOADORES-->
+  <!--LISTA DOADORES-->
   <header>
     <img class="logo" src="./assets/logo.png" alt="DOE">
     <h3>LISTA DE DOADORES</h3>
   </header>
-
-<!--teste de exclusão-->
-
-<!--teste de exclusão-->
 
   <section>
   <div class="table-responsive">
@@ -75,9 +66,13 @@
         <th>
           <a href="form.php"><button id="btnM">FORMULÁRIO</button></a>
         </th>
+        <th>
+          <a href="pesquisa_doadores.php"><button id="btnM">PESQUISAR</button></a>
+        </th>
       </tr>
     </table>
 <!-- MENU ADMIN -->
+
   <footer>Com ❤ Seis Biônicos</footer>
 </body>
 </html>
