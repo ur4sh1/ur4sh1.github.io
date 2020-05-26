@@ -16,10 +16,30 @@ include('listar.php');
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.mask.min.js"></script>
     <script src="https://kit.fontawesome.com/2ee81ba3b1.js" crossorigin="anonymous"></script>
 </head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><?php echo $_SESSION['user'];?>:</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+        <a class="nav-link" href="logout.php">Sair</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="form.php">Formulário</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pesquisa_doadores.php">Pesquisa</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
 
 <body>
 <!--LISTA DOADORES-->
@@ -54,25 +74,6 @@ include('listar.php');
     </div>
 </div>
 <!--LISTA DOADORES-->
-
-<!-- MENU ADMIN -->
-<table id="menu">
-    <tr>
-        <th>
-            <?php echo $_SESSION['user'];?>:
-        </th>
-        <th>
-            <a href="logout.php"><button id="btnM">LOGOUT</button></a>
-        </th>
-        <th>
-            <a href="form.php"><button id="btnM">FORMULÁRIO</button></a>
-        </th>
-        <th>
-            <a href="pesquisa_doadores.php"><button id="btnM">PESQUISAR</button></a>
-        </th>
-    </tr>
-</table>
-<!-- MENU ADMIN -->
 
 <footer>Com ❤ Seis Biônicos</footer>
 </body>
