@@ -13,6 +13,7 @@ Jailma Duarte de Oliveira,
 Marcionilio Brito Batista Filho
 Ricardo Coimbra da Silva
 
+Criar um database mysql com o nome: 'doadores' e importar nesse database o arquivo 'doadores.sql'.
 
 *Adicionado Tela de login no projeto:
 login: admin
