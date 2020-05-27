@@ -3,7 +3,7 @@ include_once 'conexao.php';
 
 $tipo = $_POST['palavra'];
 
-$consulta = "SELECT * FROM doadores WHERE tipo LIKE '%$tipo%' OR nome LIKE '%$tipo%' OR email LIKE '%$tipo%'
+$consulta = "SELECT * FROM doadores WHERE tipo LIKE '$tipo%' OR nome LIKE '%$tipo%' OR email LIKE '%$tipo%'
 ORDER BY nome";
 
 $resultado_user = mysqli_query($mysqli, $consulta);
