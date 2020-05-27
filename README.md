@@ -6,9 +6,9 @@ Trabalho de desenvolvimento de software para WEB.
 Agradescimentos a Professora Jessica Oliveira.
 
 Intengrante do Seis Biônicos:
-Alan,
-Gabriel,
-Gentil,
-jailma,
-Ricardo e
-Marcionilio
+Alan Lucas Edgerly,
+Gabriel Omena Pantoja Faria,
+Gentil Pereira Lima Netto,
+Jailma Duarte de Oliveira,
+Marcionilio Brito Batista Filho
+Ricardo Coimbra da Silva
