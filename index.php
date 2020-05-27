@@ -63,7 +63,7 @@ session_start();
   </section>
 <!--video-->
 <div class="vid">
-<video controls loop src="video/Campanha_Doe_Sangue.mp4" type="video/mp4" width="600">
+<video autoplay controls loop src="video/Campanha_Doe_Sangue.mp4" type="video/mp4" width="600">
 <object>
     <embed src="Campanha_Doe_Sangue.mp4" type="application/x-shockwave-flash" 
     allowfullscreen="false" allowscriptaccess="always">  		
