@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2020 at 07:21 PM
+-- Generation Time: May 27, 2020 at 06:10 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.4
 
@@ -40,15 +40,23 @@ CREATE TABLE `doadores` (
 --
 
 INSERT INTO `doadores` (`id`, `nome`, `email`, `cpf`, `tipo`) VALUES
-(1, 'Gabriely', 'Gabi@dominio.com', '487.478.458-48', 'O-'),
-(3, 'Edgar', 'edgar@gmail.com', '123', 'BA'),
-(4, 'Arthur', 'arthur@gmail.com', '123456789', 'O-'),
-(6, 'Gentil', 'gentil@gmail.com', '12345', 'A+'),
-(8, 'Alan', 'alan@gmail.com', '12345', 'AB+'),
-(9, 'José', 'jose@gmail.com', '12345', 'O-'),
-(10, 'Mario', 'contaot@gkas.com', '12391239', 'B+'),
-(14, 'Ricardo', 'email@dominio.com.br', '544987', 'AB-'),
-(18, 'Vanderson', 'email@dominio.com.br', '651.654.651-65', 'O-');
+(3, 'Edgar', 'edgar@gmail.com', '234.299.999-99', 'A-'),
+(4, 'Arthur', 'arthur@gmail.com', '234.234.555-55', 'O-'),
+(8, 'Alan', 'alan@gmail.com', '234.234.234-23', 'O-'),
+(9, 'Jose', 'jose@gmail.com', '234.222.222-22', 'B-'),
+(18, 'Vanderson', 'email@dominio.com.br', '651.654.651-65', 'AB+'),
+(20, 'Wandalerne', 'wanda@hotmail.com', '516.546.465-46', 'O-'),
+(21, 'Gabriel', 'omena@hot.com', '334.344.343-44', 'A-'),
+(22, 'Tony', 'tony@gmail.com', '212.312.312-31', 'AB-'),
+(23, 'Gentil', 'genos@hotmail.com', '545.654.898-78', 'AB+'),
+(25, 'Lucas', 'lucas.edgerly@gmail.com', '898.498.498-49', 'O-'),
+(26, 'Emanuel', 'email@dominio.com.br', '666.666.666-66', 'AB-'),
+(27, 'Ritas', 'Rita@gmail.com', '654.897.987-98', 'B-'),
+(28, 'Rosana', 'rosa@gmail.com', '515.987.545-48', 'A+'),
+(29, 'Alburquerque', 'albu@hot.com.br', '354.687.748-22', 'B+'),
+(32, 'Andreza', 'andrezassbezerra@gmail.com', '165.465.468-78', 'B-'),
+(33, 'Vanusa', 'email@dominio.com.br', '499.498.498-49', 'O+'),
+(34, 'Michely', 'micha@hotmail.com', '888.777.888-77', 'O+');
 
 -- --------------------------------------------------------
 
@@ -93,7 +101,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `doadores`
 --
 ALTER TABLE `doadores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `users`
