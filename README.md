@@ -1,11 +1,22 @@
-# ur4sh1.github.io
-Site Doe Sangue!
+<h1 align="center">:file_cabinet: Doe Sangue</h1>
 
+## :memo: Descrição
 Trabalho de desenvolvimento de software para WEB.
 
-Agradescimentos a Professora Jessica Oliveira.
+## :books: Funcionalidades
+* <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
 
-Intengrante do Seis Biônicos:
+## :wrench: Tecnologias utilizadas
+* PHP;
+* JavaScript;
+
+
+## :dart: Status do projeto
+Finalizada
+
+##Agradescimentos a Professora Jessica Oliveira.
+
+#Intengrante do Seis Biônicos:
 Alan Lucas Edgerly,
 Gabriel Omena Pantoja Faria,
 Gentil Pereira Lima Netto,
@@ -13,7 +24,7 @@ Jailma Duarte de Oliveira,
 Marcionilio Brito Batista Filho
 Ricardo Coimbra da Silva
 
-Criar um database mysql com o nome: 'doadores' e importar nesse database o arquivo 'doadores.sql'.
+Obs: Criar um database mysql com o nome: 'doadores' e importar nesse database o arquivo 'doadores.sql'.
 
 *Adicionado Tela de login no projeto:
 login: admin
